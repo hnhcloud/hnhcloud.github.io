@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Htoo Eain Lin - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #7c3aed;
+            padding-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            color: #7c3aed;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #7c3aed;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f97316;
+        }
+
+        .job-entry {
+            margin-bottom: 18px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 8px;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #333;
+        }
+
+        .company {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 5px;
+        }
+
+        .date {
+            color: #f97316;
+            font-weight: 600;
+            white-space: nowrap;
+            background: #fef3c7;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        .job-description {
+            color: #555;
+            margin: 8px 0;
+        }
+
+        .job-description ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .job-description li {
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .achievement {
+            color: #555;
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        .achievement::before {
+            content: "✓ ";
+            color: #f97316;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .skill-category {
+            margin-bottom: 12px;
+        }
+
+        .skill-category strong {
+            color: #7c3aed;
+        }
+
+        .skill-category p {
+            color: #555;
+            margin-left: 10px;
+        }
+
+        .edu-entry {
+            margin-bottom: 15px;
+        }
+
+        .edu-degree {
+            font-weight: 700;
+            color: #333;
+        }
+
+        .edu-school {
+            color: #666;
+            font-size: 0.95rem;
+            margin: 3px 0;
+        }
+
+        .edu-date {
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .cert-entry {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            border-left: 3px solid #f97316;
+            color: #555;
+        }
+
+        .cert-entry::before {
+            content: "🏆 ";
+            margin-right: 8px;
+        }
+
+        .language-entry {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .language-name {
+            font-weight: 600;
+        }
+
+        .language-level {
+            color: #f97316;
+            font-weight: 600;
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .cv-container {
+                box-shadow: none;
+                padding: 20px;
+                max-width: 100%;
+            }
+
+            .print-button {
+                display: none;
+            }
+        }
+
+        .print-button {
+            display: block;
+            margin-bottom: 20px;
+            padding: 12px 24px;
+            background: #7c3aed;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .print-button:hover {
+            background: #6d28d9;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">
+        <i>🖨️</i> Print / Save as PDF
+    </button>
+
+    <div class="cv-container">
+        <div class="header">
+            <h1>HTOO EAIN LIN</h1>
+            <p>Cloud System Engineer</p>
+            <div class="contact-info">
+                <span>📍 Yangon, Myanmar</span>
+                <span>📱 +95 9258007965</span>
+                <span>📧 htooeainlin2580@gmail.com</span>
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">PROFESSIONAL SUMMARY</div>
+            <p>
+                Cloud System Engineer with 3 years of experience in AWS, system administration, and infrastructure automation. Skilled in building scalable cloud environments, CI/CD pipelines, and containerized applications. Strong experience in troubleshooting, monitoring, and supporting production systems.
+            </p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">TECHNICAL SKILLS</div>
+            <div class="skill-category">
+                <strong>Cloud Platforms:</strong>
+                <p>AWS (EC2, VPC, RDS, S3, EKS, ELB, Auto Scaling)</p>
+            </div>
+            <div class="skill-category">
+                <strong>DevOps & Tools:</strong>
+                <p>Docker, Kubernetes, GitHub Actions (CI/CD)</p>
+            </div>
+            <div class="skill-category">
+                <strong>Monitoring Tools:</strong>
+                <p>Prometheus, Grafana, Zabbix</p>
+            </div>
+            <div class="skill-category">
+                <strong>Operating Systems:</strong>
+                <p>Linux (Ubuntu, CentOS), Windows Server</p>
+            </div>
+            <div class="skill-category">
+                <strong>Web & Server Software:</strong>
+                <p>Nginx, Apache</p>
+            </div>
+            <div class="skill-category">
+                <strong>Virtualization:</strong>
+                <p>VMware vSphere, Proxmox</p>
+            </div>
+            <div class="skill-category">
+                <strong>Databases:</strong>
+                <p>MySQL, PostgreSQL</p>
+            </div>
+            <div class="skill-category">
+                <strong>Scripting:</strong>
+                <p>Bash, Python</p>
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">PROFESSIONAL EXPERIENCE</div>
+
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Cloud Support Engineer</div>
+                        <div class="company">itGateway Technology Group Ltd (Remote)</div>
+                    </div>
+                    <div class="date">Jun 2024 – Present</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Provide technical support for cloud services and infrastructure</li>
+                        <li>Design and deploy AWS and hybrid cloud solutions</li>
+                        <li>Manage AWS services including EC2, VPC, RDS, EKS, S3, and VPN</li>
+                        <li>Build CI/CD pipelines using GitHub Actions</li>
+                        <li>Implement monitoring systems using Prometheus and Grafana</li>
+                        <li>Manage DNS records and domain configurations</li>
+                    </ul>
+                </div>
+                <div style="margin-top: 8px;">
+                    <strong style="color: #7c3aed;">Key Achievements:</strong>
+                    <div class="achievement">Deployed Docker-based Odoo ERP system with UAT and Production environments</div>
+                    <div class="achievement">Improved deployment process using CI/CD automation</div>
+                    <div class="achievement">Increased system reliability with monitoring and alerting systems</div>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">System Engineer</div>
+                        <div class="company">NTT DATA Myanmar Co., Ltd</div>
+                    </div>
+                    <div class="date">Nov 2023 – Apr 2024</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Maintained banking system infrastructure (servers, storage, load balancers)</li>
+                        <li>Monitored production, disaster recovery (DR), and test environments</li>
+                        <li>Applied system patches and updates (VMware, antivirus)</li>
+                        <li>Performed root cause analysis and incident resolution</li>
+                        <li>Ensured SLA compliance and system availability</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">System Engineer</div>
+                        <div class="company">Myanmar Link Co., Ltd</div>
+                    </div>
+                    <div class="date">May 2023 – Oct 2023</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Installed and configured monitoring systems (Zabbix, Grafana)</li>
+                        <li>Managed VMware infrastructure (vCenter, ESXi, vSAN)</li>
+                        <li>Deployed web applications on Linux servers</li>
+                        <li>Managed MySQL databases, DNS, and IPAM systems</li>
+                        <li>Performed backup and recovery operations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Junior System Engineer</div>
+                        <div class="company">itGateway Technology Group</div>
+                    </div>
+                    <div class="date">Nov 2022 – Apr 2023</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Configured AWS EC2 instances and VPC networks</li>
+                        <li>Performed VM migration (P2V, V2V)</li>
+                        <li>Managed Proxmox virtualization environments</li>
+                        <li>Configured storage systems (NFS, iSCSI)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="job-entry">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">IT Support Engineer</div>
+                        <div class="company">itGateway Technology Group</div>
+                    </div>
+                    <div class="date">May 2021 – Oct 2022</div>
+                </div>
+                <div class="job-description">
+                    <ul>
+                        <li>Installed and supported Windows and Linux systems</li>
+                        <li>Configured network devices (Mikrotik, Cisco switches)</li>
+                        <li>Set up VLAN, DHCP, NAT, and firewall rules</li>
+                        <li>Installed wireless systems and CCTV solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-title">EDUCATION</div>
+            <div class="edu-entry">
+                <div class="edu-degree">Bachelor of Science in Chemistry</div>
+                <div class="edu-school">Yenangyaung University</div>
+                <div class="edu-date">2015 – 2019</div>
+            </div>
+            <div class="edu-entry">
+                <div class="edu-degree">Diploma in Network Communication</div>
+                <div class="edu-school">Yangon University of Distance Education</div>
+                <div class="edu-date">2024 – 2025</div>
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="section">
+            <div class="section-title">CERTIFICATIONS</div>
+            <div class="cert-entry">AWS Certified Solutions Architect – Associate</div>
+            <div class="cert-entry">Fortinet Certified Fundamentals in Cybersecurity</div>
+            <div class="cert-entry">Microsoft Certified: Azure AI Fundamentals</div>
+            <div class="cert-entry">AWS Certified Cloud Practitioner</div>
+        </div>
+
+        <!-- Languages -->
+        <div class="section">
+            <div class="section-title">LANGUAGES</div>
+            <div class="language-entry">
+                <span class="language-name">Burmese</span>
+                <span class="language-level">Native Speaker</span>
+            </div>
+            <div class="language-entry">
+                <span class="language-name">English</span>
+                <span class="language-level">Intermediate</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
